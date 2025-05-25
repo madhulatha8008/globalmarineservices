@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Srinivasa Institute</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Example mobile hamburger menu toggle styling (adjust to your CSS) */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .hamburger {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Sri Srinivasa <span>INSTITUTE</span></div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+  <!-- Nav Links -->
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a> <!-- ✅ fixed this -->
+    <div class="dropdown">
+      <button class="dropbtn">Courses</button>
+      <div class="dropdown-content">
+        <a href="#">GP Rating</a>
+        <a href="#">ETO Course</a>
+      </div>
+    </div>
+    <a href="#">Job Vacancy</a>
+    <a href="#">Contact Us</a>
+    <div class="dropdown">
+      <button class="dropbtn">View More</button>
+      <div class="dropdown-content">
+        <a href="#">Gallery</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+    <span class="badge">RPSL-MUM-404</span>
+  </nav>
+</header>
+
+<!-- CAROUSEL -->
+
+    <div class="carousel-container">
+  <div class="carousel">
+    <div class="slide active">
+      <img src="web1.jpg" alt="Slide 1" />
+      <div class="overlay">
+        <h2>Our Mission</h2>
+        <p>Work abroad: let us guide you.</p>
+        <p>New workforce models and possibilities.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="web2.jpg" alt="Slide 2" />
+      <div class="overlay">
+        <h2>Global Careers</h2>
+        <p>Explore opportunities across the world.</p>
+        <p>Trusted by 300+ clients in 25+ countries.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="web3.jpg" alt="Slide 3" />
+      <div class="overlay">
+        <h2>Training Excellence</h2>
+        <p>Industry-grade skill development.</p>
+        <p>Preparing candidates for success abroad.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn left">&#8249;</button>
+  <button class="btn right">&#8250;</button>
+</div>
+
+
+
+<!-- ABOUT SECTION -->
+
+
+
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-images">
+      <div class="circle-img">
+        <img src="img1.jpg" alt="Team Meeting" />
+      </div>
+      <div class="circle-img small">
+        <img src="img2.jpg" alt="Team Member" />
+      </div>
+      <div class="circle-img smaller">
+        <img src="img3.jpg" alt="Discussion" />
+      </div>
+    </div>
+
+    <div class="about-content">
+      <h2>Know About <span>Srinivasa Institute</span></h2>
+      <p>
+        Sanska Group is one of India’s leading overseas recruitment agencies, specializing in
+        placing talent in the healthcare, tourism, and education sectors abroad. Since 2016, we’ve
+        been connecting Indian professionals to global opportunities.
+      </p>
+
+      <div class="about-container">
+        <div class="container">
+          <div class="container-icon mission-icon">
+            <img src="mission.jpg" alt="Mission Icon" />
+          </div>
+          <div>
+            <h4>Mission</h4>
+            <p>Friendly, skilled, and effective hiring to match the right talent with the right jobs.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container-icon value-icon">
+            <img src="value.jpg" alt="Value Icon" />
+          </div>
+          <div>
+            <h4>Value Proposition</h4>
+            <p>Quality-focused recruitment, backed by proven sourcing and management strategies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+    <div class="content">
+      <h1>Providing Smart and Effective<br/>Hiring Services</h1>
+      <p>
+        Sanska International is a Manpower Consultancy which holds India’s leading overseas
+        recruitment company. Sanska has made over 5,000+ placements in 25+ countries.
+        Over the years we have been serving as a catalyst in bringing together career seekers
+        and employers from across the world.
+      </p>
+
+      <div class="contact">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/headphones.png" alt="Call Icon"/>
+        </div>
+        <div class="contact-text">
+          <strong>Call for any query!</strong><br/>
+          <span class="phone">(+91) <span class="white">9704496034</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat blue">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/user-group-man-man.png"/>
+        <h2>5,072</h2>
+        <p>Recruited Candidates</p>
+      </div>
+      <div class="stat skyblue">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/passport.png"/>
+        <h2>10</h2>
+        <p>Country</p>
+      </div>
+      <div class="stat green">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png"/>
+        <h2>300</h2>
+        <p>Clients</p>
+      </div>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+  <h1>Our <span>Facilities</span> at Training center</h1>
+  <p>At our training center we teach our candidate the skill and attribute that will enable and prepare them for their new change at assignment. Especially emphasis is placed on awareness of life and environment of job, code of conduct and hygiene, safety, security and environment.</p>
+
+  <div class="facilities">
+    <div class="facility">
+      <img src="cs.jpg" alt="Furnished Classrooms">
+      <div class="Furnished classrooms">
+      <p>(audio. Visual system)</p>
+    </div>
+    </div>
+
+    <div class="facility">
+      <img src="com.jpg" alt="Computer Lab">
+      
+    <div class="Computer Labs">
+        <p>Computer Labs</p>
+      
+    </div>
+    </div>
+
+    <div class="facility">
+      <img src="sm.jpg" alt="Swimming Pool">
+      
+      <div class="Swimming pool">
+      <p>Swimming Pool</p>
+    </div>
+    </div>
+
+    <div class="facility">
+      <img src="rcs.jpg" alt="Recreation Hall">
+      
+      <div class="Recreation hall">
+      <p>Recreation Hall</p>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <h1>We follow simple yet an <br><span>effective approach</span></h1>
+    <ul>
+      <li>Process Flowcharts</li>
+      <li>Checklist for enquiry received</li>
+      <li>Checklist for information required</li>
+      <li>Central Enquiry File</li>
+      <li>Delegation Sheet</li>
+      <li>Databank Management Systems (ability to respond instantly for some urgent Client Requirements)</li>
+      <li>Training Calendar for Existence Employees</li>
+      <li>Grievances Form available on the website</li>
+      <li>Intranet (Scripting of each and every Process)</li>
+    </ul>
+  </div>
+
+  <img src="nyn.jpg">
+
+  <button class="scroll-top">↑</button>
+
+  <section class="form-section">
+    <div class="form-left">
+      <h1>Online Application Form</h1>
+      <p>Please fill out this form so we can get to know you better and have an idea of how we can assist you</p>
+      <div class="contact-box">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Headset Icon" width="40">
+        </div>
+        
+      </div>
+    </div>
+
+    <form id="contact-form">
+  <div class="row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="row">
+    <input type="text" name="mobile" placeholder="Your Mobile" required>
+    <input type="text" name="city" placeholder="City Name">
+  </div>
+  <textarea name="comment" placeholder="Comment" rows="4" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+<p id="responseMsg" style="display:none; color:green; font-weight:bold; margin-top:15px;">
+  ✅ Thank you! Your message has been submitted.
+</p>
+</section>
+
+<!-- TOGGLE MENU SCRIPT -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('navLinks');
+    menu.classList.toggle('active');
+  }
+</script>
+
+
+
+<div class="clients">
+  <h1>Our Clients Say</h1>
+  <div class="slider-container">
+    <div class="slider-wrapper" id="slider">
+      <div class="client">
+        <img src="sal.jpg" alt="Salsabeel Shipping">
+        <p>It has been a reliable logistics partner for years.<br>
+     professional, efficient, and always responsive.<br>
+    We highly recommend their services for global shipping needs.</span></p>
+      </div>
+      <div class="client">
+        <img src="fleet.jpg" alt="Fleet Line Shipping">
+        <p>It is consistently delivers on time with great care.<br>
+    Their attention to detail sets them apart in the shipping industry.</p>
+      </div>
+      <div class="client">
+        <img src="ocs.jpg" alt="Blue Ocean Supplies">
+        <p>Blue Ocean Supplies has been instrumental in streamlining our supply chain.<br>
+    Their commitment to quality and reliability is unmatched.</p>
+      </div>
+      <div class="client">
+        <img src="m1.jpg" alt="Marine One Transport">
+        <p>Marine One Transport has exceeded our expectations in every shipment.<br>
+    Their global logistics support is fast, secure, and dependable.</p>
+        
+      </div>
+      <div class="client">
+        <img src="mas.jpg" alt="Massi Shipping LLC">
+        <p>Massi Shipping LLC </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots" id="dots">
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+        <div class="dot" onclick="goToSlide(4)"></div>
+        
+        </div>
+
+
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Srinivasa Group (Corporate Contact)</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Srikakulam</p>
+      <p><i class="fas fa-phone-alt"></i> +91-9704496034</p>
+      <p><i class="fas fa-phone-alt"></i> +91-9588366674</p>
+      <p><i class="fas fa-envelope"></i> hr@abc.in</p>
+      <p><i class="fas fa-bookmark"></i> DG Shipping RPSL No. MUM-404</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    
+
+    
+
+  <div class="footer-bottom">
+    <p>© 2025. <a href="#">madhu group</a>, All Right Reserved. 
+      <a href="#">Terms & Conditions</a>. 
+      <a href="#">Privacy Policy</a>
+    </p>
+    <p>Developed by <a href="#">private</a></p>
+    <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+
+
+
+
+<script src="script1.js"></script>
+</body>
+</html>
