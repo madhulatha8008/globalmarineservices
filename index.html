@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sri Srinivasa Institute</title>
+  <title>Global Marine Services</title>
   <link rel="stylesheet" href="web.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
@@ -13,37 +13,24 @@
       scroll-behavior: smooth;
     }
 
-    /* Example mobile hamburger menu toggle styling (adjust to your CSS) */
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #fff;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      padding: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .nav-links.active {
-      display: flex;
-    }
-
-    .hamburger {
-      cursor: pointer;
-    }
+    
   </style>
 </head>
 <body>
 
 <header class="navbar">
-  <div class="logo">Sri Srinivasa <span>INSTITUTE</span></div>
+  <div class="logo-container">
+    <img src="logo.png" alt="logo" class="logo">
+    <h1>GLOBAL <span>MARINE</span> SERVICES</h1>
+  </div>
+
 
   <!-- Hamburger Icon -->
-  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
   <!-- Nav Links -->
-  <nav class="nav-links" id="navLinks">
+  <nav class="nav-menu" id="navMenu">
+    
     <a href="#about">About</a> <!-- ✅ fixed this -->
     <div class="dropdown">
       <button class="dropbtn">Courses</button>
@@ -52,8 +39,9 @@
         <a href="#">ETO Course</a>
       </div>
     </div>
-    <a href="#">Job Vacancy</a>
-    <a href="#">Contact Us</a>
+    
+
+    <a href="#contact-form-section">Contact Us</a>
     <div class="dropdown">
       <button class="dropbtn">View More</button>
       <div class="dropdown-content">
@@ -61,7 +49,7 @@
         <a href="#">About Us</a>
       </div>
     </div>
-    <span class="badge">RPSL-MUM-404</span>
+    
   </nav>
 </header>
 
@@ -70,7 +58,7 @@
     <div class="carousel-container">
   <div class="carousel">
     <div class="slide active">
-      <img src="web1.jpg" alt="Slide 1" />
+      <img src="bck.jpg" alt="Slide 1" />
       <div class="overlay">
         <h2>Our Mission</h2>
         <p>Work abroad: let us guide you.</p>
@@ -79,7 +67,7 @@
     </div>
 
     <div class="slide">
-      <img src="web2.jpg" alt="Slide 2" />
+      <img src="mst.jpeg" alt="Slide 2" />
       <div class="overlay">
         <h2>Global Careers</h2>
         <p>Explore opportunities across the world.</p>
@@ -88,7 +76,7 @@
     </div>
 
     <div class="slide">
-      <img src="web3.jpg" alt="Slide 3" />
+      <img src="mut.jpg" alt="Slide 3" />
       <div class="overlay">
         <h2>Training Excellence</h2>
         <p>Industry-grade skill development.</p>
@@ -122,11 +110,9 @@
     </div>
 
     <div class="about-content">
-      <h2>Know About <span>Srinivasa Institute</span></h2>
+      <h2>Know About <span>Global Marine Services</span></h2>
       <p>
-        Sanska Group is one of India’s leading overseas recruitment agencies, specializing in
-        placing talent in the healthcare, tourism, and education sectors abroad. Since 2016, we’ve
-        been connecting Indian professionals to global opportunities.
+        To join the Merchant Navy, aspiring seafarers typically need to complete either 10th or 12th grade education<br> meet specific age and medical requirements, possess good English communication skills, and have a valid passport. 
       </p>
 
       <div class="about-container">
@@ -153,47 +139,33 @@
   </div>
 </section>
 
-<section class="container">
-    <div class="content">
-      <h1>Providing Smart and Effective<br/>Hiring Services</h1>
-      <p>
-        Sanska International is a Manpower Consultancy which holds India’s leading overseas
-        recruitment company. Sanska has made over 5,000+ placements in 25+ countries.
-        Over the years we have been serving as a catalyst in bringing together career seekers
-        and employers from across the world.
-      </p>
+<div class="stats-section">
+  <h2 class="stats-heading">Our Achievements</h2>
+  <p class="stats-subheading">
+    We are proud of our journey and the milestones we have achieved in recruitment and client service across countries.
+  </p>
 
-      <div class="contact">
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/headphones.png" alt="Call Icon"/>
-        </div>
-        <div class="contact-text">
-          <strong>Call for any query!</strong><br/>
-          <span class="phone">(+91) <span class="white">9704496034</span></span>
-        </div>
-      </div>
+  <div class="stats">
+    <div class="stat">
+      <img src="man.png" alt="Candidates" />
+      <h3>5,072</h3>
+      <p>Recruited Candidates</p>
     </div>
-
-    <div class="stats">
-      <div class="stat blue">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/user-group-man-man.png"/>
-        <h2>5,072</h2>
-        <p>Recruited Candidates</p>
-      </div>
-      <div class="stat skyblue">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/passport.png"/>
-        <h2>10</h2>
-        <p>Country</p>
-      </div>
-      <div class="stat green">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png"/>
-        <h2>300</h2>
-        <p>Clients</p>
-      </div>
+    <div class="stat">
+      <img src="count.png" alt="Country" />
+      <h3>10</h3>
+      <p>Countries</p>
     </div>
-  </section>
+    <div class="stat">
+      <img src="rct.png" alt="Clients" />
+      <h3>300</h3>
+      <p>Clients</p>
+    </div>
+  </div>
+</div>
 
-  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+  
+  
   <h1>Our <span>Facilities</span> at Training center</h1>
   <p>At our training center we teach our candidate the skill and attribute that will enable and prepare them for their new change at assignment. Especially emphasis is placed on awareness of life and environment of job, code of conduct and hygiene, safety, security and environment.</p>
 
@@ -214,13 +186,7 @@
     </div>
     </div>
 
-    <div class="facility">
-      <img src="sm.jpg" alt="Swimming Pool">
-      
-      <div class="Swimming pool">
-      <p>Swimming Pool</p>
-    </div>
-    </div>
+    
 
     <div class="facility">
       <img src="rcs.jpg" alt="Recreation Hall">
@@ -232,26 +198,11 @@
 
   </div>
 
-  <div class="container">
-    <h1>We follow simple yet an <br><span>effective approach</span></h1>
-    <ul>
-      <li>Process Flowcharts</li>
-      <li>Checklist for enquiry received</li>
-      <li>Checklist for information required</li>
-      <li>Central Enquiry File</li>
-      <li>Delegation Sheet</li>
-      <li>Databank Management Systems (ability to respond instantly for some urgent Client Requirements)</li>
-      <li>Training Calendar for Existence Employees</li>
-      <li>Grievances Form available on the website</li>
-      <li>Intranet (Scripting of each and every Process)</li>
-    </ul>
-  </div>
+  
 
-  <img src="nyn.jpg">
+  
 
-  <button class="scroll-top">↑</button>
-
-  <section class="form-section">
+  <section id="contact-form-section">
     <div class="form-left">
       <h1>Online Application Form</h1>
       <p>Please fill out this form so we can get to know you better and have an idea of how we can assist you</p>
@@ -334,15 +285,17 @@
         </div>
 
 
-</div>
+      </div>
+
+
 
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-section contact">
-      <h3>Srinivasa Group (Corporate Contact)</h3>
+      <h3>Global Marine Services(Corporate Contact)</h3>
       <p><i class="fas fa-map-marker-alt"></i> Srikakulam</p>
       <p><i class="fas fa-phone-alt"></i> +91-9704496034</p>
-      <p><i class="fas fa-phone-alt"></i> +91-9588366674</p>
+      
       <p><i class="fas fa-envelope"></i> hr@abc.in</p>
       <p><i class="fas fa-bookmark"></i> DG Shipping RPSL No. MUM-404</p>
       <div class="social-icons">
